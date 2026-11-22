@@ -106,5 +106,17 @@ document.querySelectorAll(".filter").forEach((btn) => {
   });
 });
 
+// Eingebettete Demos anhalten / fortsetzen
+document.querySelectorAll("[data-demo-toggle]").forEach((btn) => {
+  const frame = document.getElementById(btn.dataset.demoToggle);
+  if (!frame) return;
+  btn.addEventListener("click", () => {
+    const paused = btn.getAttribute("aria-pressed") !== "true";
+    btn.setAttribute("aria-pressed", paused);
+    btn.textContent = paused ? "▶ Fortsetzen" : "⏸ Anhalten";
+    frame.contentWindow.postMessage({ type: "hans-pause", paused }, "*");
+  });
+});
+
 const year = document.getElementById("year");
 if (year) year.textContent = new Date().getFullYear();

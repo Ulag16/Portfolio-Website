@@ -42,23 +42,26 @@
     <p class="lead">Ein kleines Webprojekt rund um Hans, meinen Panda-Freund.</p>
     <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
     <div class="detail-visual detail-demo">
-      <iframe src="demos/hans.html" title="Hans der Panda – interaktive Demo" loading="lazy"></iframe>
+      <iframe id="hans-demo" src="demos/hans.html" title="Hans der Panda – interaktive Demo" loading="lazy"></iframe>
     </div>
-    <p class="demo-links mono"><a href="demos/hans.html" target="_blank" rel="noopener">Im Vollbild öffnen ↗</a></p>
+    <div class="demo-links mono">
+      <button type="button" class="demo-toggle" data-demo-toggle="hans-demo" aria-pressed="false">⏸ Anhalten</button>
+      <a href="demos/hans.html" target="_blank" rel="noopener">Im Vollbild öffnen ↗</a>
+    </div>
   </section>
 
   <div class="detail-grid">
     <div class="detail-content">
       <h2>Über das Projekt</h2>
-      <p>Hans ist ein kleines, verspieltes Webprojekt, in dem sich alles um meinen Panda-Freund dreht. Es ist mit klassischen Web-Technologien umgesetzt.</p>
-
+      <p><strong>Hans</strong> ist ein kleines, verspieltes Webprojekt, bei dem sich alles um meinen Panda-Freund dreht. Aktuell basiert das Projekt auf klassischen Webtechnologien, doch Hans ist weit mehr als nur eine kleine Spielerei. <br>
+          Meine Vision ist es, Hans langfristig in den meisten meiner Projekte wiederzufinden – als eine eigene KI, die mich bei unterschiedlichsten Aufgaben unterstützt und nach und nach zu einem vielseitigen Helfer heranwächst.</p>
+      <p>Warum ausgerechnet ein Panda? Ganz einfach: Pandas gehören zu meinen absoluten Lieblingstieren. Ich finde sie unglaublich süß und liebe ihren einzigartigen Charakter. Deshalb war für mich schnell klar, dass genau ein Panda die perfekte Grundlage für Hans sein würde.</p>
       <h2>Technologien</h2>
       <ul class="list">
         <li><strong>HTML</strong> – Aufbau der Seite</li>
         <li><strong>CSS</strong> – Gestaltung und Animationen</li>
         <li><strong>JavaScript</strong> – Interaktionen</li>
       </ul>
-      <!-- Hier kannst du weitere Abschnitte ergänzen, z. B. <h2>Was ich gelernt habe</h2><p>…</p> -->
     </div>
 
     <aside class="about-card">
@@ -66,7 +69,6 @@
         <li><span>Typ</span>Web-Projekt</li>
         <li><span>Sprachen</span>HTML, CSS, JS</li>
       </ul>
-      <!-- GitHub-Link: trage die Adresse deines Repositorys bei href="" ein, z. B. href="https://github.com/NAME/REPO" -->
       <a href="" data-github class="btn btn-primary" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
         <span class="label">Repository öffnen</span>

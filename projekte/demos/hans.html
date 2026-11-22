@@ -460,7 +460,26 @@ const durations = { wave: 2.2, jump: 1.5, spin: 1.3, dance: 2.6, nod: 1.6, wiggl
 let action = null, last = -1, count = 0, typing, hideTimer, talkingUntil = 0;
 const clock = new THREE.Clock();
 
+// Pause: Zeit einfrieren, damit Animationen nach dem Fortsetzen nahtlos weiterlaufen
+let paused = false, pausedAt = 0, pausedTotal = 0;
+const realElapsed = clock.getElapsedTime.bind(clock);
+clock.getElapsedTime = () => (paused ? pausedAt : realElapsed()) - pausedTotal;
+const hint = document.querySelector(".hint");
+const hintText = hint.textContent;
+function setPaused(p) {
+  if (p === paused) return;
+  if (p) pausedAt = realElapsed();
+  else pausedTotal += realElapsed() - pausedAt;
+  paused = p;
+  hint.textContent = p ? "⏸ Pausiert" : hintText;
+  if (p) bubble.classList.remove("show");
+}
+addEventListener("message", e => {
+  if (e.source === parent && e.data && e.data.type === "hans-pause") setPaused(!!e.data.paused);
+});
+
 function poke(x, y) {
+  if (paused) return;
   let n;
   do { n = Math.floor(Math.random() * lines.length); } while (n === last);
   last = n;
@@ -473,6 +492,7 @@ function poke(x, y) {
 }
 
 function say(text) {
+  if (paused) return;
   clearInterval(typing);
   clearTimeout(hideTimer);
   bubble.textContent = "";
@@ -684,6 +704,7 @@ readTheme();
 
 function animate() {
   requestAnimationFrame(animate);
+  if (paused) return;
   const t = clock.getElapsedTime();
   if (++frame % 60 === 0) readTheme();
 

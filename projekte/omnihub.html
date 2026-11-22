@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OmniHub – Julian Rohde</title>
+<meta name="description" content="Projekt: OmniHub von Julian Rohde.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav">
+  <a href="../index.html" class="logo">jr<span>.</span></a>
+  <nav>
+    <a href="../index.html#about">Über mich</a>
+    <a href="../index.html#skills">Skills</a>
+    <a href="../index.html#projects">Projekte</a>
+    <a href="../index.html#experience">Werdegang</a>
+    <a href="../index.html#contact" class="nav-cta">Kontakt</a>
+  </nav>
+  <div class="theme-picker">
+    <button class="theme-toggle" aria-label="Design wählen" aria-haspopup="true" aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 3a9 9 0 0 0 0 18c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3-4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3 4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
+    </button>
+    <div class="theme-menu" role="menu" hidden>
+      <button role="menuitemradio" data-theme-option="dark"><span class="swatch sw-dark"></span>Dunkel</button>
+      <button role="menuitemradio" data-theme-option="light"><span class="swatch sw-light"></span>Hell</button>
+      <button role="menuitemradio" data-theme-option="blue"><span class="swatch sw-blue"></span>Blau</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="detail-hero">
+    <a href="../index.html#projects" class="back-link mono">← Zurück zu den Projekten</a>
+    <p class="mono idx">03 · Windows-Anwendung</p>
+    <h1>OmniHub</h1>
+    <p class="lead">Eine Windows-Anwendung, mit der ich meine Programme und Anwendungen auf dem PC zentral verwalten kann.</p>
+    <ul class="tags"><li>C#</li><li>WPF</li></ul>
+    <div class="project-visual detail-visual v3"><span class="mono">03</span></div>
+  </section>
+
+  <div class="detail-grid">
+    <div class="detail-content">
+      <h2>Über das Projekt</h2>
+      <p>OmniHub soll mir dabei helfen, meine Programme und Anwendungen auf dem PC an einem zentralen Ort zu verwalten, statt sie überall zusammensuchen zu müssen.</p>
+
+      <h2>Technologien</h2>
+      <ul class="list">
+        <li><strong>C#</strong> – Programmlogik der Anwendung</li>
+        <li><strong>WPF</strong> – grafische Benutzeroberfläche unter Windows</li>
+      </ul>
+      <!-- Hier kannst du weitere Abschnitte ergänzen, z. B. <h2>Funktionen</h2><p>…</p> -->
+    </div>
+
+    <aside class="about-card">
+      <ul class="mono">
+        <li><span>Typ</span>Windows-App</li>
+        <li><span>Sprachen</span>C#, WPF</li>
+      </ul>
+      <!-- GitHub-Link: trage die Adresse deines Repositorys bei href="" ein, z. B. href="https://github.com/NAME/REPO" -->
+      <a href="" data-github class="btn btn-primary" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+        <span class="label">Repository öffnen</span>
+      </a>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer mono">
+  <span>© <span id="year"></span> Julian Rohde</span>
+  <a href="../index.html">Zur Startseite ↑</a>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

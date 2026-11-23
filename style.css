@@ -211,6 +211,12 @@ h2 { font-size: clamp(2rem, 5vw, 3.4rem); letter-spacing: -.04em; line-height: 1
 .project { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: var(--card); transition: transform .4s, border-color .3s, opacity .3s; }
 .project:hover { transform: translateY(-6px); border-color: color-mix(in srgb, var(--text) 25%, transparent); }
 .project.hidden { display: none; }
+.project-group { margin-top: 56px; }
+.project-group.hidden { display: none; }
+.group-head { margin-bottom: 24px; }
+.group-head h3 { font-size: 1.4rem; letter-spacing: -.02em; margin-bottom: 6px; }
+.group-head p { color: var(--muted); }
+.project-body p + p { margin-top: -6px; }
 .project-visual { aspect-ratio: 16/10; position: relative; overflow: hidden; display: flex; align-items: flex-end; padding: 20px; }
 .project-visual span { color: rgba(255,255,255,.85); position: relative; z-index: 1; }
 .project-visual::after { content: ""; position: absolute; inset: 0; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
@@ -238,10 +244,15 @@ h2 { font-size: clamp(2rem, 5vw, 3.4rem); letter-spacing: -.04em; line-height: 1
 .back-link:hover { color: var(--accent); }
 .detail-hero h1 { font-size: clamp(2.4rem, 6vw, 4.6rem); margin: 10px 0 0; }
 .detail-hero .tags { margin-top: 28px; }
+.detail-shot { margin: 56px 0 0; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: var(--card); }
+.detail-shot img { display: block; width: 100%; height: auto; }
 .detail-visual { aspect-ratio: 21/8; border: 1px solid var(--border); border-radius: var(--radius); margin-top: 56px; }
 .detail-demo { aspect-ratio: 16/9; overflow: hidden; background: var(--bg-2); }
 .detail-demo iframe { display: block; width: 100%; height: 100%; border: 0; }
-.demo-links { margin-top: 14px; text-align: right; }
+.demo-links { margin-top: 14px; display: flex; justify-content: flex-end; align-items: center; gap: 18px; flex-wrap: wrap; }
+.demo-toggle { font: inherit; font-size: .85rem; padding: 7px 16px; border-radius: 999px; border: 1px solid var(--border); background: transparent; color: var(--muted); cursor: pointer; transition: all .2s; }
+.demo-toggle:hover { color: var(--text); border-color: color-mix(in srgb, var(--text) 25%, transparent); }
+.demo-toggle[aria-pressed="true"] { background: var(--text); color: var(--bg); border-color: var(--text); }
 .demo-links a { color: var(--muted); border-bottom: 1px solid var(--border); transition: color .2s, border-color .2s; }
 .demo-links a:hover { color: var(--accent); border-color: var(--accent); }
 .detail-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 48px; align-items: start; padding: 80px 0 120px; }

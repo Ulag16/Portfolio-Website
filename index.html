@@ -122,7 +122,7 @@
       <span class="mono idx">03</span>
       <h2>Projekte</h2>
     </div>
-    <p class="section-note reveal">Ein Großteil dieser Projekte befindet sich noch in der Entwicklung. Für mich stehen dabei vor allem das Ausprobieren neuer Ideen, praktische Erfahrung und das kontinuierliche Dazulernen im Vordergrund.</p>
+    <p class="section-note reveal">Meine Projekte sind in drei Bereiche unterteilt: abgeschlossene Projekte, Projekte in Bearbeitung und zukünftige Projekte. So lässt sich der aktuelle Entwicklungsstand besser nachvollziehen und ein Überblick über geplante Vorhaben gewinnen.</p>
     <div class="filters reveal" role="tablist">
       <button class="filter active" data-filter="all">Alle</button>
       <button class="filter" data-filter="web">Web</button>
@@ -130,67 +130,104 @@
       <button class="filter" data-filter="games">Spiele</button>
       <button class="filter" data-filter="ki">KI</button>
     </div>
-    <div class="projects-grid">
-      <article class="project reveal" data-cat="web">
-        <div class="project-visual v1"><span class="mono">01</span></div>
-        <div class="project-body">
-          <div class="project-meta mono">Website</div>
-          <h3>Portfolio-Website</h3>
-          <p>Meine eigene Website zur Präsentation meiner Person und meiner Projekte – genau die, auf der du gerade bist.</p>
-          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-          <a href="projekte/portfolio.html" class="btn btn-ghost project-more">Mehr erfahren <span>→</span></a>
-        </div>
-      </article>
-      <article class="project reveal" data-cat="web">
-        <div class="project-visual v2"><span class="mono">02</span></div>
-        <div class="project-body">
-          <div class="project-meta mono">Web-Projekt</div>
-          <h3>Hans – Mein Panda-Freund</h3>
-          <p>Ein kleines Webprojekt rund um Hans, meinen Panda-Freund.</p>
-          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-          <a href="projekte/hans.html" class="btn btn-ghost project-more">Mehr erfahren <span>→</span></a>
-        </div>
-      </article>
-      <article class="project reveal" data-cat="desktop">
-        <div class="project-visual v3"><span class="mono">03</span></div>
-        <div class="project-body">
-          <div class="project-meta mono">Windows-Anwendung</div>
-          <h3>OmniHub</h3>
-          <p>Eine Windows-Anwendung, mit der ich meine Programme und Anwendungen auf dem PC zentral verwalten kann.</p>
-          <ul class="tags"><li>C#</li><li>WPF</li></ul>
-          <a href="projekte/omnihub.html" class="btn btn-ghost project-more">Mehr erfahren <span>→</span></a>
-        </div>
-      </article>
-      <article class="project reveal" data-cat="games">
-        <div class="project-visual v4"><span class="mono">04</span></div>
-        <div class="project-body">
-          <div class="project-meta mono">Browser-Spiele</div>
-          <h3>Browsergames</h3>
-          <p>Verschiedene kleine Browser-Spiele für eine Spaßwebsite, die ich gemeinsam mit meinen Ausbildungskollegen betreibe.</p>
-          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-          <a href="projekte/browsergames.html" class="btn btn-ghost project-more">Mehr erfahren <span>→</span></a>
-        </div>
-      </article>
-      <article class="project reveal" data-cat="ki">
-        <div class="project-visual v5"><span class="mono">05</span></div>
-        <div class="project-body">
-          <div class="project-meta mono">Experiment</div>
-          <h3>Minecraft-KI</h3>
-          <p>Ein experimentelles Projekt, bei dem eine künstliche Intelligenz versucht, Minecraft selbstständig und ohne Eingaben des Spielers durchzuspielen.</p>
-          <ul class="tags"><li>Python</li><li>KI</li></ul>
-          <a href="projekte/minecraft-ki.html" class="btn btn-ghost project-more">Mehr erfahren <span>→</span></a>
-        </div>
-      </article>
-      <article class="project reveal" data-cat="games">
-        <div class="project-visual v6"><span class="mono">06</span></div>
-        <div class="project-body">
-          <div class="project-meta mono">Spieleentwicklung</div>
-          <h3>Erste Unity-Spiele</h3>
-          <p>Meine ersten eigenen Versuche in der Spieleentwicklung.</p>
-          <ul class="tags"><li>Unity</li><li>C#</li></ul>
-          <a href="projekte/unity-spiele.html" class="btn btn-ghost project-more">Mehr erfahren <span>→</span></a>
-        </div>
-      </article>
+
+    <div class="project-group">
+      <div class="group-head reveal">
+        <h3>Abgeschlossene Projekte</h3>
+        <p>Projekte, deren ursprüngliche Entwicklung abgeschlossen ist.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project reveal" data-cat="web">
+          <div class="project-visual v1"><span class="mono">01</span></div>
+          <div class="project-body">
+            <div class="project-meta mono">Website · Abgeschlossen</div>
+            <h3>Portfolio-Website</h3>
+            <p>Meine eigene Website zur Präsentation meiner Person und meiner Projekte – genau die, auf der du gerade bist. Die Website ist fertiggestellt.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <a href="projekte/portfolio.html" class="btn btn-ghost project-more">Mehr erfahren <span>→</span></a>
+          </div>
+        </article>
+        <article class="project reveal" data-cat="desktop">
+          <div class="project-visual v3"><span class="mono">02</span></div>
+          <div class="project-body">
+            <div class="project-meta mono">Windows-Anwendung · Abgeschlossen</div>
+            <h3>OmniHub</h3>
+            <p>Eine Windows-Anwendung, mit der ich meine Programme und Anwendungen auf dem PC zentral verwalten kann. Die erste Version ist abgeschlossen, in Zukunft könnten weitere Funktionen und Erweiterungen hinzukommen.</p>
+            <ul class="tags"><li>C#</li><li>WPF</li></ul>
+            <a href="projekte/omnihub.html" class="btn btn-ghost project-more">Mehr erfahren <span>→</span></a>
+          </div>
+        </article>
+        <article class="project reveal" data-cat="games">
+          <div class="project-visual v4"><span class="mono">03</span></div>
+          <div class="project-body">
+            <div class="project-meta mono">Browser-Spiele · Abgeschlossen</div>
+            <h3>Browsergames</h3>
+            <p>Verschiedene kleine Browser-Spiele für eine Spaßwebsite, die ich gemeinsam mit meinen Ausbildungskollegen betreibe. Die Entwicklung ist abgeschlossen.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <a href="projekte/browsergames.html" class="btn btn-ghost project-more">Mehr erfahren <span>→</span></a>
+          </div>
+        </article>
+        <article class="project reveal" data-cat="web">
+          <div class="project-visual v2"><span class="mono">04</span></div>
+          <div class="project-body">
+            <div class="project-meta mono">Web-Projekt · Abgeschlossen</div>
+            <h3>Hans – Mein Panda-Freund</h3>
+            <p>Hans als virtueller Panda ist fertiggestellt. Langfristig soll er um KI-Funktionen erweitert werden, um ihn zu einem interaktiven KI-Begleiter weiterzuentwickeln.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <a href="projekte/hans.html" class="btn btn-ghost project-more">Mehr erfahren <span>→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="project-group">
+      <div class="group-head reveal">
+        <h3>Projekte in Bearbeitung</h3>
+        <p>Projekte, an denen aktuell aktiv gearbeitet wird oder deren Entwicklung noch nicht vollständig abgeschlossen ist.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project reveal" data-cat="ki">
+          <div class="project-visual v2"><span class="mono">05</span></div>
+          <div class="project-body">
+            <div class="project-meta mono">KI-Erweiterung · In Bearbeitung</div>
+            <h3>Hans – Mein Panda-Freund</h3>
+            <p>Hans ist derzeit ein virtueller Panda ohne eigene KI-Fähigkeiten und kann noch nicht intelligent auf seine Umgebung oder den Nutzer reagieren.</p>
+            <ul class="tags"><li>KI</li><li>Roadmap</li></ul>
+            <a href="projekte/hans.html" class="btn btn-ghost project-more">Mehr erfahren <span>→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="project-group">
+      <div class="group-head reveal">
+        <h3>Zukünftige Projekte</h3>
+        <p>Ideen und Vorhaben, deren Umsetzung für die Zukunft geplant ist.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project reveal" data-cat="ki">
+          <div class="project-visual v5"><span class="mono">06</span></div>
+          <div class="project-body">
+            <div class="project-meta mono">Geplant</div>
+            <h3>Minecraft-KI</h3>
+            <p>Eine eigenständige KI, die lernen soll, das Videospiel Minecraft selbstständig zu spielen und schließlich eigenständig durchzuspielen.</p>
+            <p>Dabei soll die KI Schritt für Schritt lernen, Spielmechaniken zu verstehen, Entscheidungen zu treffen und eigenständig Lösungen für verschiedene Herausforderungen zu entwickeln.</p>
+            <ul class="tags"><li>Python</li><li>KI</li></ul>
+            <a href="projekte/minecraft-ki.html" class="btn btn-ghost project-more">Mehr erfahren <span>→</span></a>
+          </div>
+        </article>
+        <article class="project reveal" data-cat="games">
+          <div class="project-visual v6"><span class="mono">07</span></div>
+          <div class="project-body">
+            <div class="project-meta mono">Geplant</div>
+            <h3>Unity-Spiele</h3>
+            <p>Die Entwicklung eines vollständig eigenen Indie-Games mit Unity.</p>
+            <p>Ziel ist es, ein eigenes Spiel von Grund auf zu konzipieren, zu gestalten und umzusetzen – angefangen beim grundlegenden Spielkonzept bis hin zum fertigen Spielerlebnis.</p>
+            <ul class="tags"><li>Unity</li><li>C#</li></ul>
+            <a href="projekte/unity-spiele.html" class="btn btn-ghost project-more">Mehr erfahren <span>→</span></a>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 

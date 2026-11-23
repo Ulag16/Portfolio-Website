@@ -103,6 +103,9 @@ document.querySelectorAll(".filter").forEach((btn) => {
     document.querySelectorAll(".project").forEach((p) => {
       p.classList.toggle("hidden", f !== "all" && p.dataset.cat !== f);
     });
+    document.querySelectorAll(".project-group").forEach((g) => {
+      g.classList.toggle("hidden", !g.querySelector(".project:not(.hidden)"));
+    });
   });
 });
 
